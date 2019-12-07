@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+        <details>
+                <summary>Some details</summary>
+                <p>More info about the details.</p>
+              </details>
+
+        <input list="browsers">
+
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Google Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist><br>
+
+<input type="url">
+<br>
+<input type="month" class="form-control">
+<br>
+<input type="email" required>
+<br>
+<input type="number" max="10" min="0">
+    <br>
+
+    <input type="color">
+<br>
+    <input type="range"
+    min="0" max="100"
+    step="20" value="30">
+    <div class="col-sm-6">
+            <input type="range" 
+              id="move-range" 
+              min="0" max="120" 
+              step="20" value="30">
+          </div>
+          <div class="col-sm-4">
+            <span id="move-value">30</span>
+          </div>
+    <br>
+    <input type="week">
+    <br>
+    <input type="date">
+    <br>
+    <input type="time">
+    <br>
+    <input type="search" placeholder="Buscar" autofocus>
+    <br>
+    <input type="text" 
+    id="direction-list"  
+    list="direction-data"
+    placeholder="directional preference"
+    class="form-control">
+			
+  <datalist id="direction-data">
+    <option value="North"></option>
+    <option value="South"></option>
+    <option value="East"></option>
+    <option value="West"></option>
+  </datalist>
+  <br>
+
+  <input type="text" 
+  id="username" 
+  name="username" 
+  pattern="[a-zA-Z ]{5,}" 
+  placeholder="username" 
+  maxlength="30" 
+  required />
+  
+<div class="invalid">
+  The required user name may only be a series of alphabetical characters.
+</div>
+
+<script>
+console.log("Estre es un mensaje");
+
+var moveValue = document.getElementById('move-value');
+				
+document.getElementById('move-range').addEventListener('change', function() {
+	moveValue.innerText = this.value;
+}, false);
+</script>
+
+</body>
+</html>
