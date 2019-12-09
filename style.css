@@ -30,7 +30,7 @@ input:valid + .invalid { /* Adjacent sibling selector */
     border-bottom: 2px solid #c33;
   }
   
-  input:valid {
+  input:valid {s
     border-bottom: transparent;
   }
   
